@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int x,y;
+    int row;
+    int column;
+    cin>>row>>column;
+    int arr[row][column];
+    int *base_address = &arr[x][y];
+    for(int i =0;i<row;i++){
+        for(int j = 0;j<column;j++){
+            cin>>arr[i][j];
+        }
+    }
+    cin>>x>>y;
+    for(int i =0;i<row;i++){
+        for(int j =0;j<column;j++){
+            cout<<arr[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    cout<<base_address;
+    return 0;
+}
